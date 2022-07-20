@@ -1,0 +1,53 @@
+<link
+  href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  rel="stylesheet"
+  id="bootstrap-css"
+/>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <h2 id="registrate" data-text="Recuperar cuenta">Recuperar cuenta</h2>
+    </div>
+
+    <!-- Login Form -->
+    <form>
+      <input
+        type="text"
+        id="login"
+        class="fadeIn second"
+        name="login"
+        placeholder="Ingresa tu correo (mínimo 8 caracteres)"
+        #passwordResetEmail
+        minlength="8"
+      />
+      <input
+        type="submit"
+        style="margin-top: 25px"
+        class="fadeIn fourth"
+        value="RECUPERAR"
+        (click)="authService.ForgotPassword(passwordResetEmail.value)"
+      />
+    </form>
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <div class="cuenta-registro">
+        <p>¿Ya estás registrado?</p>
+        <a routerLink="/iniciar-sesion">Hacé clic aquí.</a>
+      </div>
+      <a
+        class="underlineHover"
+        href="https://www.argentina.gob.ar/produccion/argentina-programa/segunda-etapa"
+        target="_blank"
+        >Argentina Programa 2022 #YoProgramo</a
+      >
+    </div>
+  </div>
+</div>
