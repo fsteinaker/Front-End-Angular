@@ -34,7 +34,7 @@ const routes: Routes = [
   {
     path: 'portfolio',
     component: PortfolioComponent,
-    canActivate: [AuthGuard],
+    //canActivate: [AuthGuard],
   },
   {
     path: 'nueva-exp',

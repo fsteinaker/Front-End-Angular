@@ -17,10 +17,6 @@ body {
   padding-top: 68px;
 }
 
-head {
-  height: 10px;
-}
-
 .card {
   margin-right: auto;
   margin-left: auto;
@@ -547,19 +543,10 @@ div.divisor-lugar-trab-educ {
 }
 
 @media all and (max-width: 599px) {
+
   body {
     padding-top: 100px;
     width: 100%;
-    margin-left: 5%;
-    padding-left: 0%;
-  }
-
-  nav.navbar.navbar-light {
-    margin-left: -5%;
-  }
-
-  section#cabecera {
-    width: 599px;
   }
 
   div.social {
@@ -571,7 +558,25 @@ div.divisor-lugar-trab-educ {
     float: right;
   }
 
+  div#logo_argentina_programa{
+    width: 450px;
+  }
+
+  #cabecera{
+    width: 300px;
+    margin-left: 7.5%;
+  }
+
+  img#arg-programa-gif{
+    width: 180px;
+  }
+
+  #datos_cv{
+    width: auto;
+  }
+
   div#cabecera-responsive {
+    visibility: visible;
     display: block;
     background-color: white;
     margin-top: 150px;
@@ -583,17 +588,15 @@ div.divisor-lugar-trab-educ {
 
   div#logo_argentina_programa {
     width: 90%;
-    display: flex;
-    justify-content: center;
   }
 
-  img#img_cabecera {
+  #img_cabecera {
     display: none;
+    visibility: hidden;
   }
 
   section#datos_cv {
     margin-top: 10px;
-    margin-left: -10px;
   }
 
   img.isotipo {
@@ -640,6 +643,7 @@ div.divisor-lugar-trab-educ {
   }
 
   .edit-icon1 {
+    display: none;
     visibility: hidden;
   }
 
