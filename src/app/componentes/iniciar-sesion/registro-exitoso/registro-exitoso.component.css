@@ -1,43 +1,79 @@
-div.card{
-    margin-top: -25px;
+div.card {
+  margin-top: -25px;
+}
+
+div.card-body {
+  width: 50%;
+  margin-left: 20%;
+}
+
+#img-registro {
+  width: 500px;
+  height: auto;
+  margin-left: 180px;
+  margin-top: 25px;
+}
+
+#img-regis {
+  width: 400px;
+  display: block;
+  margin-top: 20px;
+  margin-left: 63%;
+}
+
+#titulo {
+  font-weight: bolder;
+  display: block;
+  margin-top: 25px;
+  text-align: center;
+}
+
+#registro_detalle {
+  display: block;
+  text-align: center;
+  margin-top: 25px;
+  margin-left: 10%;
+  width: 700px;
+  margin-bottom: 25px;
+}
+
+#entendido {
+  font-weight: bold;
+  width: 150px;
+  margin-left: 43%;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+/* DISEÑO RESPONSIVE */
+@media all and (min-width: 600px) and (max-width: 1023px) {
+  #img-registro {
+    width: 350px;
+    margin-left: 16%;
   }
 
-div.card-body{
-    width: 50%;
+  #registro_detalle {
+    margin-left: 10%;
+    width: 450px;
+  }
+
+  #entendido {
+    margin-left: 200px;
+  }
 }
 
-#img-registro{
-    display: block;
-    margin-left: 33%;
-    margin-right: 33%;
-}
+@media all and (max-width: 599px) {
+  #img-registro {
+    width: 250px;
+    margin-left: 9%;
+  }
 
-#img-regis{
-    width: 400px;
-    display: block;
-    margin-top: 20px;
-    margin-left: 63%;
-}
+  #registro_detalle {
+    margin-left: 2%;
+    width: 300px;
+  }
 
-#titulo{
-    font-weight: bolder;
-    display: block;
-    margin-top: 25px;
-    text-align: center;
-}
-
-#registro_detalle{
-    display: block;
-    text-align: center;
-    margin-top: 25px;
-    margin-left: 20%;
-    width: 700px;
-}
-
-#entendido{
-    font-weight: bold;
-    width: 150px;
-    margin-left: 43%;
-    margin-bottom: 20px;
-    padding: 10px;
+  #entendido {
+    margin-left: 25%;
+  }
 }

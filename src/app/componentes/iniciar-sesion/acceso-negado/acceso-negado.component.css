@@ -1,37 +1,80 @@
-div.card{
+div.card {
   margin-top: -25px;
 }
 
 div.card-body {
+  width: 50%;
+  margin-left: 20%;
+}
+
+#ups {
+  font-weight: bolder;
+  display: block;
+  margin-top: 25px;
+  text-align: center;
+}
+
+img#cat-gif {
+  width: 600px;
+  height: auto;
+  margin-left: 100px;
+}
+
+#error_detalle {
+  display: block;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 8%;
+  width: 700px;
+}
+
+#entendido {
+  font-weight: bold;
+  width: 150px;
+  margin-left: 42%;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+/* DISEÑO RESPONSIVE */
+@media all and (min-width: 600px) and (max-width: 1023px) {
+  div.card-body {
     width: 50%;
+    margin-left: 5%;
   }
-  
-  #cat-error {
-    display: block;
-    margin-left: 33%;
-    margin-right: 33%;
+
+  img#cat-gif {
+    width: 400px;
+    height: auto;
+    margin-left: 50px;
   }
-  
-  #ups {
-    font-weight: bolder;
-    display: block;
-    margin-top: 25px;
-    text-align: center;
-  }
-  
+
   #error_detalle {
-    display: block;
-    text-align: center;
-    margin-top: 25px;
-    margin-left: 20%;
-    width: 700px;
+    width: 450px;
   }
-  
+
   #entendido {
-    font-weight: bold;
-    width: 150px;
-    margin-left: 45%;
-    margin-bottom: 20px;
-    padding: 10px;
+    margin-left: 200px;
   }
-  
+}
+
+@media all and (max-width: 599px) {
+  #error-card.card.h1 {
+    font-size: 3pt;
+  }
+
+  img#cat-gif {
+    width: 300px;
+    height: auto;
+    margin-left: 0px;
+  }
+
+  #error_detalle {
+    width: 85%;
+  }
+
+  #entendido {
+    margin-left: 28%;
+  }
+}

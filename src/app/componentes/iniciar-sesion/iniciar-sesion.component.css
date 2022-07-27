@@ -26,12 +26,14 @@ h2 {
   color: #cccccc;
 }
 
-input:invalid:focus#login, input:invalid:focus#password {
+input:invalid:focus#login,
+input:invalid:focus#password {
   background-image: linear-gradient(pink, rgb(255, 94, 94));
   color: rgb(138, 5, 5);
 }
 
-input:valid:focus#login, input:valid:focus#password  {
+input:valid:focus#login,
+input:valid:focus#password {
   background-image: linear-gradient(rgb(199, 248, 199), rgb(88, 146, 88));
   color: rgb(15, 72, 15);
 }
@@ -340,4 +342,16 @@ input[type="text"]:placeholder {
 
 #icon {
   width: 60%;
+}
+
+/* RESPONSIVE */
+
+@media all and (max-width: 599px) {
+  #formContent {
+    max-width: 300px;
+  }
+
+  .wrapper {
+    margin-top: -80px;
+  }
 }

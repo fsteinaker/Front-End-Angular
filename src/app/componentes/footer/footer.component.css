@@ -1,29 +1,70 @@
-#logos_argprog{
-    list-style-type: none;
+#logos_argprog {
+  list-style-type: none;
 }
 
-.logo_footer{
-    display: inline;
-    float: none;
-    width: 100%;
+.logo_footer {
+  display: inline;
+  float: center;
+  width: 100%;
 }
 
-#logo_produccion, #logo_inti, #logo_cessi{
-    display: inline-block;
+#logo_produccion,
+#logo_inti,
+#logo_cessi {
+  display: inline-block;
 }
 
-#logo_produccion{
+#logo_produccion {
+  width: 40%;
+}
+
+#logo_inti {
+  width: 18%;
+  margin-left: 90px;
+  margin-top: 10px;
+}
+
+#logo_cessi {
+  width: 18%;
+  float: right;
+  margin-right: 25px;
+}
+
+/* DISEÑO RESPONSIVE */
+@media all and (min-width: 600px) and (max-width: 1023px) {
+  #logo_inti {
+    width: 18%;
+    margin-left: 45px;
+  }
+}
+
+@media all and (max-width: 599px) {
+  #logo_produccion,
+  #logo_inti,
+  #logo_cessi {
+    display: block;
+    float: left;
+    clear: left;
+  }
+
+  #logo_produccion {
+    width: 80%;
+    margin-left: 25px;
+  }
+
+  #logo_inti {
     width: 40%;
-}
-
-#logo_inti{
-    width: 18%;
+    margin-top: 20px;
     margin-left: 90px;
-    margin-top: 10px;
-}
+  }
 
-#logo_cessi{
-    width: 18%;
-    float: right;
-    margin-right: 25px;
+  #logo_cessi {
+    width: 40%;
+    margin-top: 20px;
+    margin-left: 90px;
+  }
+
+  #logos_argprog {
+    width: 300px;
+  }
 }

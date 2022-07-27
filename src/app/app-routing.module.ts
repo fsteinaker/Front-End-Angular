@@ -36,10 +36,11 @@ const routes: Routes = [
     component: PortfolioComponent,
     canActivate: [AuthGuard],
   },
-  { 
+  {
     path: 'nueva-exp',
     component: NuevaExpComponent,
-    canActivate: [AuthGuard] },
+    canActivate: [AuthGuard],
+  },
   {
     path: 'nueva-form',
     component: NuevaFormComponent,
@@ -65,10 +66,10 @@ const routes: Routes = [
     component: EditarFormComponent,
     canActivate: [AuthGuard],
   },
-  { 
+  {
     path: 'nueva-hab',
     component: NuevaHabComponent,
-    canActivate: [AuthGuard]
+    canActivate: [AuthGuard],
   },
   {
     path: 'editar-hab/:id',

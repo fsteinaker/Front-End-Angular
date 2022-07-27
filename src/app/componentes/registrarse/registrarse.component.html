@@ -37,7 +37,8 @@
         minlength="8"
       />
       <input
-        type="button" [disabled]="!registroForm.form.valid"
+        type="button"
+        [disabled]="!registroForm.form.valid"
         style="margin-top: 25px"
         class="fadeIn fourth"
         value="REGISTRARSE"
@@ -51,6 +52,7 @@
         <p>¿Ya estás registrado?</p>
         <a routerLink="/iniciar-sesion">Hacé clic aquí.</a>
       </div>
+      <br />
       <a
         class="underlineHover"
         href="https://www.argentina.gob.ar/produccion/argentina-programa/segunda-etapa"

@@ -14,7 +14,7 @@ app-root.footer {
 body {
   background-image: url(.\assets\img\code_bg.png);
   background-color: rgb(238, 238, 238);
-  padding-top: 68px; /* ES PARA EL NAVBAR, HACER CORRECCIONES CON EL RESPONSIVE!!! */
+  padding-top: 68px;
 }
 
 head {
@@ -260,7 +260,8 @@ ul {
 
 /* BOTON EDITAR */
 .edit-icon1,
-.edit-icon2 {
+.edit-icon2,
+.edit-icon-responsive {
   float: right;
   width: 32px;
   filter: invert(77%) sepia(0%) saturate(0%) hue-rotate(261deg) brightness(103%)
@@ -270,7 +271,8 @@ ul {
 }
 
 .edit-icon1:hover,
-.edit-icon2:hover {
+.edit-icon2:hover,
+.edit-icon-responsive {
   filter: invert(64%) sepia(65%) saturate(1066%) hue-rotate(162deg)
     brightness(94%) contrast(96%);
   transform: scale(1.25);
@@ -278,10 +280,18 @@ ul {
 
 .edit-icon1 {
   padding-top: 0;
+  margin-left: 135px;
 }
 
 .edit-icon2 {
   padding-top: 70px;
+}
+
+.edit-icon-responsive,
+.botones-edicion-responsive,
+.botones-edicion-responsive-2 {
+  visibility: hidden;
+  display: none;
 }
 
 .borrar {
@@ -433,9 +443,8 @@ div.divisor-lugar-trab-educ {
   margin-left: 8%;
   margin-right: 2%;
   float: left;
-  margin-bottom: 30px;
   width: 300px;
-  height: auto;
+  height: 525px;
 }
 
 .circulo-grafico {
@@ -465,4 +474,215 @@ div.divisor-lugar-trab-educ {
   margin: auto;
   text-emphasis: center;
   width: 70%;
+}
+
+/* DISEÑO RESPONSIVE */
+@media all and (min-width: 600px) and (max-width: 1023px) {
+  section,
+  app-root.body,
+  app-root.footer {
+    width: 600px;
+  }
+
+  #img_cabecera {
+    width: 600px;
+    height: 225px;
+  }
+
+  #fondo_cabecera {
+    height: 75px;
+  }
+
+  #nombre_persona {
+    font-size: 24pt;
+    margin-top: -45px;
+  }
+
+  #foto_cv {
+    width: 140px;
+    height: 160px;
+    margin-top: -85px;
+  }
+
+  p.datos_cv_info {
+    font-size: 11pt;
+    line-height: 18pt;
+  }
+
+  div#logo_argentina_programa {
+    margin-bottom: -70px;
+  }
+
+  .isotipo {
+    width: 60px;
+    margin-top: 1px;
+  }
+
+  .edit-icon1 {
+    padding-left: 7px;
+    margin-left: -20px;
+  }
+
+  div.card {
+    width: 570px;
+  }
+
+  div.titulo-trab-educ {
+    width: 55%;
+  }
+
+  .sangria-francesa {
+    padding-left: 5px;
+    padding-right: 10px;
+  }
+
+  .skill {
+    margin-left: 20%;
+    float: center;
+  }
+
+  div.container_proyecto {
+    margin-left: 150px;
+  }
+}
+
+@media all and (max-width: 599px) {
+  body {
+    padding-top: 100px;
+    width: 100%;
+    margin-left: 5%;
+    padding-left: 0%;
+  }
+
+  nav.navbar.navbar-light {
+    margin-left: -5%;
+  }
+
+  section#cabecera {
+    width: 599px;
+  }
+
+  div.social {
+    margin-top: -20px;
+    margin-bottom: 5px;
+    margin-right: -55px;
+    clear: both;
+    width: 100%;
+    float: right;
+  }
+
+  div#cabecera-responsive {
+    display: block;
+    background-color: white;
+    margin-top: 150px;
+    width: 350px;
+    height: 300px;
+    margin-left: 2%;
+    border-radius: 20px;
+  }
+
+  div#logo_argentina_programa {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+
+  img#img_cabecera {
+    display: none;
+  }
+
+  section#datos_cv {
+    margin-top: 10px;
+    margin-left: -10px;
+  }
+
+  img.isotipo {
+    margin-top: 5px;
+  }
+
+  div.social {
+    margin-top: -40px;
+  }
+
+  p#nombre_persona,
+  p.datos_cv_info {
+    clear: both;
+  }
+
+  img#foto_cv {
+    display: block;
+    margin-left: 80px;
+  }
+
+  p#nombre_persona {
+    font-size: 20pt;
+    padding-top: 150px;
+    margin-left: 50px;
+    position: absolute;
+  }
+
+  p.datos_cv_info {
+    padding-top: 50px;
+    text-align: center;
+  }
+
+  #fondo_cabecera {
+    height: 0px;
+  }
+
+  div.card {
+    display: flex;
+    flex: row;
+    flex-direction: column;
+    min-width: 340px;
+    max-width: 350px;
+    margin-left: 3%;
+  }
+
+  .edit-icon1 {
+    visibility: hidden;
+  }
+
+  .edit-icon-responsive {
+    visibility: visible;
+    display: block;
+    padding-top: 20px;
+    padding-left: 5px;
+  }
+
+  .botones-edicion-responsive,
+  .botones-edicion-responsive-2 {
+    display: block;
+    visibility: visible;
+    float: right;
+    padding-top: 15px;
+  }
+
+  .botones-edicion-responsive-2 {
+    clear: both;
+    float: left;
+    margin-top: -20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+
+  .botones-edicion-exp-edu {
+    visibility: hidden;
+    display: none;
+  }
+
+  .sangria-francesa {
+    padding-left: 5px;
+    padding-right: 10px;
+  }
+
+  div.skill {
+    margin-left: -10px;
+  }
+
+  div.container_proyecto {
+    clear: both;
+    margin-top: 80px;
+    margin-left: 40px;
+  }
 }

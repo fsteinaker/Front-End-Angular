@@ -36,7 +36,8 @@
         minlength="8"
       />
       <input
-        type="button" [disabled]="!inicioForm.form.valid"
+        type="button"
+        [disabled]="!inicioForm.form.valid"
         style="margin-top: 25px"
         class="fadeIn fourth"
         value="Iniciar sesión"
@@ -50,12 +51,12 @@
         <p>¿No tenes una cuenta?</p>
         <a routerLink="/registrarse">Hacé clic aquí.</a>
       </div>
-        <div class="cuenta-registro" style="clear: both;">
+      <div class="cuenta-registro" style="clear: both">
         <p>¿Olvidaste tu cuenta?</p>
-          <a routerLink="/reset">Hacé clic aquí.</a>
-        </div>
-
-        <a
+        <a routerLink="/reset">Hacé clic aquí.</a>
+      </div>
+      <br />
+      <a
         class="underlineHover"
         href="https://www.argentina.gob.ar/produccion/argentina-programa/segunda-etapa"
         target="_blank"

@@ -1,34 +1,74 @@
-
-nav{
-    display: block;
+nav {
+  display: block;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-.sticky{
-    position: fixed;
-    top: 0;
-    overflow: hidden;
-    z-index: 10;
-  }  
-  
-  .content{
-    height: 200vh;
-  }
+.sticky {
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  z-index: 10;
+}
 
-  #YoProgramo{
-    font-weight:bold;    
-    font-size: 18pt;
-    margin-top: 5px;
-    margin-bottom: -10px;
-  }
+.content {
+  height: 200vh;
+}
 
-  #YoProgramo-texto{
+#YoProgramo {
+  font-weight: bold;
+  font-size: 18pt;
+  margin-top: 5px;
+  margin-bottom: -10px;
+}
+
+#YoProgramo-texto {
   color: white;
 }
 
-  #numeral-YoProgramo{
-    color: gold;
+#numeral-YoProgramo {
+  color: gold;
+}
+
+/* DISEÑO RESPONSIVE */
+@media all and (min-width: 600px) and (max-width: 1023px) {
+  #YoProgramo {
+    font-size: 14.5pt;
   }
+
+  #usuario {
+    margin-top: 5px;
+    font-size: 11pt;
+  }
+
+  .btn.btn-outline-light {
+    width: 90px;
+    font-size: 10pt;
+  }
+
+  #icono-perfil {
+    display: none;
+  }
+}
+
+@media all and (max-width: 599px) {
+  #YoProgramo a {
+    font-size: 14pt;
+    padding-top: 25px;
+  }
+
+  p#numeral-YoProgramo {
+    margin-top: -4px;
+  }
+
+  #icono-perfil {
+    display: none;
+  }
+
+  #usuario {
+    margin-top: -2px;
+    font-size: 11pt;
+  }
+}
