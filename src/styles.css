@@ -268,15 +268,15 @@ ul {
 
 .edit-icon1:hover,
 .edit-icon2:hover,
-.edit-icon-responsive {
+.edit-icon-responsive:hover {
   filter: invert(64%) sepia(65%) saturate(1066%) hue-rotate(162deg)
     brightness(94%) contrast(96%);
   transform: scale(1.25);
 }
 
 .edit-icon1 {
-  padding-top: 0;
-  margin-left: 135px;
+  margin-right: 30px;
+  padding-top: 65px;
 }
 
 .edit-icon2 {
@@ -573,6 +573,7 @@ div.divisor-lugar-trab-educ {
 
   #datos_cv{
     width: auto;
+    height: auto;
   }
 
   div#cabecera-responsive {
@@ -581,8 +582,8 @@ div.divisor-lugar-trab-educ {
     background-color: white;
     margin-top: 150px;
     width: 350px;
-    height: 300px;
-    margin-left: 2%;
+    height: 320px;
+    margin-left: 3%;
     border-radius: 20px;
   }
 
@@ -609,6 +610,7 @@ div.divisor-lugar-trab-educ {
 
   p#nombre_persona,
   p.datos_cv_info {
+    text-align: center;
     clear: both;
   }
 
@@ -618,15 +620,16 @@ div.divisor-lugar-trab-educ {
   }
 
   p#nombre_persona {
+    width: 90%;
     font-size: 20pt;
-    padding-top: 150px;
-    margin-left: 50px;
-    position: absolute;
+    padding-top: 30px;
+    margin-left: 2.5%;
   }
 
   p.datos_cv_info {
-    padding-top: 50px;
-    text-align: center;
+    clear: both;
+    padding-top: 10px;
+    width: 90%;
   }
 
   #fondo_cabecera {
@@ -650,8 +653,8 @@ div.divisor-lugar-trab-educ {
   .edit-icon-responsive {
     visibility: visible;
     display: block;
-    padding-top: 20px;
-    padding-left: 5px;
+    padding-top: 90px;
+    margin-right: 30px;
   }
 
   .botones-edicion-responsive,
