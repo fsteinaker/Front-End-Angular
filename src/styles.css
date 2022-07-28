@@ -506,7 +506,7 @@ div.divisor-lugar-trab-educ {
     float: left;
     font-size: 11pt;
     line-height: 18pt;
-    width: 410px;
+    width: 440px;
   }
 
   div#logo_argentina_programa {
@@ -519,11 +519,13 @@ div.divisor-lugar-trab-educ {
   }
 
   .edit-icon1 {
-    float: right;
-    margin-right: 10px;
-    padding-left: 7px;
+    float: left;
+    padding-left: 10px;
+    margin-left: -20px;
+    margin-top: -10px;
+    position: absolute;
   }
-
+  
   div.card {
     width: 570px;
   }
