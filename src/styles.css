@@ -486,7 +486,7 @@ div.divisor-lugar-trab-educ {
   }
 
   #fondo_cabecera {
-    height: 75px;
+    height: 105px;
   }
 
   #nombre_persona {
@@ -497,12 +497,16 @@ div.divisor-lugar-trab-educ {
   #foto_cv {
     width: 140px;
     height: 160px;
-    margin-top: -85px;
+    margin-top: -60px;
+    background-image: url(src\assets\img\default-profile-2.jpg);
   }
 
   p.datos_cv_info {
+    padding-top: 5px;
+    float: left;
     font-size: 11pt;
     line-height: 18pt;
+    width: 390px;
   }
 
   div#logo_argentina_programa {
@@ -515,8 +519,9 @@ div.divisor-lugar-trab-educ {
   }
 
   .edit-icon1 {
+    float: right;
+    margin-right: 20px;
     padding-left: 7px;
-    margin-left: -20px;
   }
 
   div.card {
@@ -582,7 +587,7 @@ div.divisor-lugar-trab-educ {
     background-color: white;
     margin-top: 150px;
     width: 350px;
-    height: 320px;
+    height: 340px;
     margin-left: 3%;
     border-radius: 20px;
   }
