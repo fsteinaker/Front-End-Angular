@@ -24,7 +24,7 @@ export class IniciarSesionComponent {
       if (email !== '' && password !== '') {
         if (res) {
           console.log('res -> ', res);
-          this.router.navigate(['/portfolio']);
+          this.router.navigate(['/cargando']);
         } else {
           this.router.navigate(['/error']);
         }

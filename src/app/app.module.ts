@@ -24,6 +24,7 @@ import { EditarProyectoComponent } from './componentes/proyectos/editar-proyecto
 import { FooterComponent } from './componentes/footer/footer.component';
 import { RegistrarseComponent } from './componentes/registrarse/registrarse.component';
 import { IniciarSesionComponent } from './componentes/iniciar-sesion/iniciar-sesion.component';
+import { CargandoComponent } from './componentes/iniciar-sesion/cargando/cargando.component';
 import { PortfolioComponent } from './componentes/portfolio/portfolio.component';
 import { ErrorComponent } from './componentes/iniciar-sesion/error/error.component';
 import { RegistroExitosoComponent } from './componentes/iniciar-sesion/registro-exitoso/registro-exitoso.component';
@@ -67,6 +68,7 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     NuevoProyectoComponent,
     EditarProyectoComponent,
     ResetComponent,
+    CargandoComponent,
   ],
   imports: [
     BrowserModule,
